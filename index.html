@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms de Cadastro</title>
+</head>
+
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <hr>
+    <form method="post" action="https://www.w3schools.com/action_page.php">
+        <input type="date" name="date"><br>
+        <h2>Dados de Acesso: </h2>
+        <label for="n">Usuário: </label>
+        <input id="n" type="email" name="email" placeholder="Digite seu email"><br>
+        <br>
+        <label for="p">Senha: </label>
+        <input id="p" type="password" name="password" placeholder="Digite sua senha"><br>
+        <br><br>
+        <hr>
+        <h2>Dados Pessoais: </h2>
+        <label for="no">Nome: </label>
+        <input id="no" type="text" name="nome"><br>
+        <h5>Endereço:</h5>
+        <label for="r">Rua: </label>
+        <input id="r" type="text" name="rua">
+        <label for="n">Número: </label>
+        <input id="r" type="number" name="number">
+        <label for="c">Complemento: </label>
+        <input id="c" type="text" name="Complemento">
+        <br><br>
+        <label for="city">Cidade de Residência: </label>
+        <input list="cidade" name="cidade">
+        <datalist id="cidade">
+            <option value="Araçoiaba da Serra">
+            <option value="Boituva">
+            <option value="Capela do Alto">
+            <option value="Itu">
+            <option value="Piedade">
+            <option value="Porto Feliz">
+            <option value="Salto">
+            <option value="São Roque">
+            <option value="Sorocaba">
+            <option value="Tietê">
+            <option value="Votorantim">
+        </datalist>
+        <br><br>
+        <label for="estado">Escolha seu estado:</label>
+        <select id="estado" name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="none" selected>-----</option>
+        </select>
+        <br><br>
+        <label for="cep">CEP:</label>
+        <input id="cep" type="text" name="cep" maxlength="9" placeholder="00000-000">
+        <hr>
+        <h2>Gênero:</h2>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino.</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino.</label><br>
+        <input type="radio" id="nao_dizer" name="genero" value="nao_dizer">
+        <label for="nao_dizer">Prefiro não falar.</label>
+        <hr>
+        <h2>Curso:</h2>
+        <input type="checkbox" id="curso1" name="curso1" value="ADS">
+        <label for="curso1"> ADS.</label><br>
+        <input type="checkbox" id="curso2" name="curso2" value="jogos">
+        <label for="curso2">Jogos.</label><br>
+        <input type="checkbox" id="curso3" name="curso3" value="gestao_ti">
+        <label for="curso3"> Gestão de TI.</label><br>
+        <input type="checkbox" id="curso4" name="curso4" value="banco_dados">
+        <label for="curso4"> Banco de Dados.</label>
+        <hr>
+        <h2>Modelo:</h2>
+        <input type="checkbox" id="modelo1" name="modelo1" value="presencial">
+        <label for="modelo1"> Presencial.</label><br>
+        <input type="checkbox" id="modelo2" name="modelo2" value="ead">
+        <label for="modelo2">EAD.</label><br>
+        <input type="checkbox" id="modelo3" name="modelo3" value="semi_presencial">
+        <label for="modelo3"> Semi Presencial.</label>
+        <br><br>
+        <input type="submit" value="Enviar por submit">
+        <input type="reset" value="Limpar Dados">
+
+</body>
+
+</html>
